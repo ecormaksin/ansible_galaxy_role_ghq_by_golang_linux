@@ -1,0 +1,7 @@
+---
+# tasks file for ansible_galaxy_role_ghq_by_golang_linux
+
+- name: "ghq | install by golang"
+  ignore_errors: "{{ ansible_check_mode }}"
+  shell:
+    cmd: /usr/local/go/bin/go get github.com/x-motemen/ghq
